@@ -50,12 +50,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		align-items: flex-start;
 	}
 	.left {
-		flex: 1.1;
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-		padding-top: 90px;
-	}
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 60px;
+}
 	.welcome {
 		padding: 4px 0;
 	}
@@ -107,19 +107,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		color: rgba(255, 255, 255, 0.82);
 		line-height: 1.5;
 	}
-	.picture {
-		flex: 1.15;
-		max-width: 560px;
-		display: flex;
-		align-items: flex-start;
-		justify-content: center;
-	}
-	.picture img {
-		width: 100%;
-		height: auto;
-		max-height: 420px;
-		object-fit: contain;
-	}
+.picture {
+    flex: 1.6;
+    max-width: 800px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 	@media (max-width: 780px) {
 		.wrap {
 			flex-direction: column;
