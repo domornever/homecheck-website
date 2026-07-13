@@ -13,12 +13,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<div class="wrap">
-				<div class="left">
-					<div class="welcome">
-						<h1 class="w-title">Welcome to Home Theory</h1>
-						<p class="w-desc">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
-					</div>
+			<div class="hero">
+				<div class="hero-left">
+					<h1 class="h1">Welcome to Home Theory</h1>
+					<p class="hbody">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
 					<div class="btnrow">
 						<a href="/quiz" class="btn quiz">
 							<div class="b-title">Quiz</div>
@@ -30,7 +28,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 						</a>
 					</div>
 				</div>
-				<div class="picture">
+				<div class="hero-right">
 					<img src="/House-searching-pana.png" alt="Illustration of a person searching for a home" />
 				</div>
 			</div>
@@ -40,53 +38,47 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 </html>
 
 <style>
-main {
-    width: 100%;
-    max-width: 1500px;
-    padding: 24px 60px 80px;
-    min-height: calc(100vh - 200px);
-    box-sizing: border-box;
-}
-	.wrap {
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
+	main {
+		width: 100%;
+		max-width: 1200px;
+		padding: 60px 40px;
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
-	.left {
-		flex: 1.1;
+	.hero {
 		display: flex;
-		flex-direction: column;
-		gap: 16px;
-		padding-top: 90px;
+		align-items: center;
+		gap: 60px;
 	}
-	.welcome {
-		padding: 4px 0;
+	.hero-left {
+		flex: 1;
+		max-width: 460px;
 	}
-	.w-title {
+	.h1 {
 		font-family: Georgia, serif;
-		font-size: clamp(38px, 5vw, 48px);
+		font-size: clamp(34px, 4.5vw, 46px);
 		font-weight: 700;
 		color: #1C1A17;
-		margin: 0 0 14px;
 		line-height: 1.15;
+		margin: 0 0 20px;
 	}
-	.w-desc {
-		font-size: 14px;
-		color: #7A6F5F;
+	.hbody {
+		font-size: 16px;
+		color: #5A5040;
 		line-height: 1.6;
-		margin: 0;
+		margin: 0 0 24px;
 	}
 	.btnrow {
 		display: flex;
 		gap: 14px;
+		flex-wrap: wrap;
 	}
 	.btn {
-		flex: 1;
-		border-radius: 12px;
-		padding: 20px;
+		border-radius: 10px;
+		padding: 18px 20px;
+		width: 200px;
 		text-decoration: none;
-		display: flex;
-		flex-direction: column;
+		display: block;
 		transition: transform 0.15s;
 	}
 	.btn:hover {
@@ -100,7 +92,7 @@ main {
 	}
 	.b-title {
 		font-family: Georgia, serif;
-		font-size: 22px;
+		font-size: 19px;
 		font-weight: 700;
 		color: #fff;
 		margin-bottom: 6px;
@@ -110,29 +102,25 @@ main {
 		color: rgba(255, 255, 255, 0.82);
 		line-height: 1.5;
 	}
-.picture {
-    flex: 1;
-    max-width: 480px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-.picture img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-	@media (max-width: 780px) {
-		.wrap {
-			flex-direction: column;
+	.hero-right {
+		flex-shrink: 0;
+		width: 340px;
+	}
+	.hero-right img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	@media (max-width: 900px) {
+		.hero {
+			flex-direction: column-reverse;
+			gap: 30px;
 		}
-		.left {
-			padding-top: 0;
-		}
-		.picture {
-			order: -1;
-			margin-bottom: 20px;
+		.hero-left {
 			max-width: 100%;
+		}
+		.hero-right {
+			width: 260px;
 		}
 	}
 </style>
