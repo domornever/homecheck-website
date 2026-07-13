@@ -13,22 +13,23 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<div class="grid">
-				<div class="welcome">
-					<h1 class="w-title">Welcome to Home Theory</h1>
-					<p class="w-desc">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
+			<div class="wrap">
+				<div class="left">
+					<div class="welcome">
+						<h1 class="w-title">Welcome to Home Theory</h1>
+						<p class="w-desc">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
+					</div>
+					<div class="btnrow">
+						<a href="/quiz" class="btn quiz">
+							<div class="b-title">Quiz</div>
+							<div class="b-desc">Answer 6 quick questions and see exactly what you can buy, with grant estimates.</div>
+						</a>
+						<a href="/blog" class="btn blog">
+							<div class="b-title">Blog</div>
+							<div class="b-desc">Guides on BTO, resale, grants, and eligibility rules — explained in plain English.</div>
+						</a>
+					</div>
 				</div>
-
-				<a href="/quiz" class="btn quiz">
-					<div class="b-title">Quiz</div>
-					<div class="b-desc">Answer 6 quick questions and see exactly what you can buy, with grant estimates.</div>
-				</a>
-
-				<a href="/blog" class="btn blog">
-					<div class="b-title">Blog</div>
-					<div class="b-desc">Guides on BTO, resale, grants, and eligibility rules — explained in plain English.</div>
-				</a>
-
 				<div class="picture">
 					<img src="/House-searching-pana.png" alt="Illustration of a person searching for a home" />
 				</div>
@@ -40,41 +41,50 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 <style>
 	main {
-		max-width: 1000px;
-		padding: 40px 24px 80px;
+		max-width: 1100px;
+		padding: 24px 40px 80px;
 	}
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1.1fr;
-		grid-template-rows: auto 1fr;
+	.wrap {
+		display: flex;
+		gap: 24px;
+		align-items: flex-start;
+	}
+	.left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
 		gap: 16px;
+		padding-top: 110px;
 	}
 	.welcome {
-		grid-column: 1 / 3;
-		padding: 10px 4px;
+		padding: 4px 0;
 	}
 	.w-title {
 		font-family: Georgia, serif;
-		font-size: clamp(32px, 5vw, 44px);
+		font-size: clamp(26px, 4vw, 30px);
 		font-weight: 700;
 		color: #1C1A17;
-		margin: 0 0 14px;
-		line-height: 1.1;
+		margin: 0 0 10px;
+		line-height: 1.15;
 	}
 	.w-desc {
-		font-size: 17px;
+		font-size: 14px;
 		color: #7A6F5F;
 		line-height: 1.6;
 		margin: 0;
 	}
+	.btnrow {
+		display: flex;
+		gap: 14px;
+	}
 	.btn {
+		flex: 1;
 		border-radius: 12px;
-		padding: 26px;
+		padding: 20px;
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
 		transition: transform 0.15s;
-		min-height: 180px;
 	}
 	.btn:hover {
 		transform: translateY(-3px);
@@ -87,27 +97,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 	.b-title {
 		font-family: Georgia, serif;
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: 700;
 		color: #fff;
-		margin-bottom: 10px;
-		height: 36px;
-		display: flex;
-		align-items: center;
+		margin-bottom: 6px;
 	}
 	.b-desc {
-		font-size: 14px;
+		font-size: 12px;
 		color: rgba(255, 255, 255, 0.82);
-		line-height: 1.55;
+		line-height: 1.5;
 	}
 	.picture {
-		grid-column: 3 / 4;
-		grid-row: 1 / 3;
+		flex: 1.15;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 12px;
-		overflow: hidden;
 	}
 	.picture img {
 		width: 100%;
@@ -115,17 +119,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		object-fit: contain;
 	}
 	@media (max-width: 780px) {
-		.grid {
-			grid-template-columns: 1fr;
-			grid-template-rows: auto auto auto auto;
+		.wrap {
+			flex-direction: column;
 		}
-		.welcome {
-			grid-column: 1;
+		.left {
+			padding-top: 0;
 		}
 		.picture {
-			grid-column: 1;
-			grid-row: auto;
 			order: -1;
+			margin-bottom: 20px;
 		}
 	}
 </style>
