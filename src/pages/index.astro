@@ -50,11 +50,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		align-items: flex-start;
 	}
 	.left {
-		flex: 1;
+		flex: 1.1;
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
-		padding-top: 110px;
+		padding-top: 90px;
 	}
 	.welcome {
 		padding: 4px 0;
@@ -109,13 +109,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 	.picture {
 		flex: 1.15;
+		max-width: 560px;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 	}
 	.picture img {
 		width: 100%;
 		height: auto;
+		max-height: 420px;
 		object-fit: contain;
 	}
 	@media (max-width: 780px) {
@@ -128,6 +130,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		.picture {
 			order: -1;
 			margin-bottom: 20px;
+			max-width: 100%;
 		}
 	}
 </style>
