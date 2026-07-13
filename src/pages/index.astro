@@ -13,37 +13,119 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div class="grid">
+				<div class="welcome">
+					<h1 class="w-title">Welcome to Home Theory</h1>
+					<p class="w-desc">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
+				</div>
+
+				<a href="/quiz" class="btn quiz">
+					<div class="b-title">Quiz</div>
+					<div class="b-desc">Answer 6 quick questions and see exactly what you can buy, with grant estimates.</div>
+				</a>
+
+				<a href="/blog" class="btn blog">
+					<div class="b-title">Blog</div>
+					<div class="b-desc">Guides on BTO, resale, grants, and eligibility rules — explained in plain English.</div>
+				</a>
+
+				<div class="picture">
+					<img src="/House-searching-pana.png" alt="Illustration of a person searching for a home" />
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		max-width: 1000px;
+		padding: 40px 24px 80px;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1.1fr;
+		grid-template-rows: auto 1fr;
+		gap: 16px;
+	}
+	.welcome {
+		grid-column: 1 / 3;
+		padding: 10px 4px;
+	}
+	.w-title {
+		font-family: Georgia, serif;
+		font-size: clamp(32px, 5vw, 44px);
+		font-weight: 700;
+		color: #1C1A17;
+		margin: 0 0 14px;
+		line-height: 1.1;
+	}
+	.w-desc {
+		font-size: 17px;
+		color: #7A6F5F;
+		line-height: 1.6;
+		margin: 0;
+	}
+	.btn {
+		border-radius: 12px;
+		padding: 26px;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		transition: transform 0.15s;
+		min-height: 180px;
+	}
+	.btn:hover {
+		transform: translateY(-3px);
+	}
+	.btn.quiz {
+		background: #C5613A;
+	}
+	.btn.blog {
+		background: #6B4A32;
+	}
+	.b-title {
+		font-family: Georgia, serif;
+		font-size: 30px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 10px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+	}
+	.b-desc {
+		font-size: 14px;
+		color: rgba(255, 255, 255, 0.82);
+		line-height: 1.55;
+	}
+	.picture {
+		grid-column: 3 / 4;
+		grid-row: 1 / 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+	.picture img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	@media (max-width: 780px) {
+		.grid {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto auto;
+		}
+		.welcome {
+			grid-column: 1;
+		}
+		.picture {
+			grid-column: 1;
+			grid-row: auto;
+			order: -1;
+		}
+	}
+</style>
