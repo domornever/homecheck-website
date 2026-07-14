@@ -40,7 +40,15 @@ a:hover { text-decoration: underline; }
   padding: 0 24px; height: 56px;
   background: var(--bg); border-bottom: 0.5px solid var(--border-soft);
 }
-.logo { font-size: 18px; font-weight: 800; letter-spacing: -0.4px; color: var(--ink); user-select: none; }
+.logo {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: var(--ink);
+  text-decoration: none;
+  user-select: none;
+}
 .logo-sg { color: var(--clay); }
 
 .back-btn {

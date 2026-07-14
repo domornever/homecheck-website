@@ -188,7 +188,18 @@ const submitLead = async () => {
   return (
     <div className="app">
       <header className="header">
-        <div className="logo">HomeCheck<span className="logo-sg">SG</span></div>
+        <a
+          href="/"
+          className="logo"
+          onClick={(e) => {
+            if (step !== 'intro' && step !== 'results') {
+              const confirmed = window.confirm('Are you sure you want to leave? Your quiz progress will be lost.')
+              if (!confirmed) e.preventDefault()
+            }
+          }}
+        >
+          Home <span className="logo-sg">Theory</span>
+        </a>
         {showBack && <button className="back-btn" onClick={handleBack}>← Back</button>}
       </header>
 
@@ -382,7 +393,7 @@ function LeadScreen({ lead, setLead, onSubmit, submitting }) {
           onChange={e => setConsent(e.target.checked)}
           className="consent-checkbox"
         />
-        <span>I agree to be contacted by a property specialist regarding my results. I consent to HomeCheckSG collecting and using my personal data in accordance with Singapore's PDPA.</span>
+        <span>I agree to be contacted by a property specialist regarding my results. I consent to Home Theory collecting and using my personal data in accordance with Singapore's PDPA.</span>
       </label>
       <button
         className={`btn-primary full-width ${!valid ? 'disabled' : ''}`}
@@ -497,7 +508,7 @@ function ResultsScreen({ results, leadName, recordId, onRestart }) {
       <div className="rpt-card">
 
         <div className="rpt-header">
-          <div className="rpt-header-eyebrow">HomeCheckSG</div>
+          <div className="rpt-header-eyebrow">Home Theroy</div>
           <div className="rpt-header-row">
             <div>
               <h2 className="rpt-header-title">Property Report</h2>
