@@ -31,18 +31,25 @@ body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(
 a { color: var(--clay); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+.logo:hover {
+  text-decoration: none;
+}
+
 /* ── App shell ──────────────────────────────────────────────────────────────── */
 .app { display: flex; flex-direction: column; min-height: 100vh; }
 
 .header {
   position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 24px; height: 56px;
-  background: var(--bg); border-bottom: 0.5px solid var(--border-soft);
+  margin: 0;
+  height: 70px;
+  padding: 0 24px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(15, 18, 25, 0.05);
 }
 .logo {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.4px;
   color: var(--ink);
