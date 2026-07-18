@@ -15,7 +15,6 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
 		<style>
 			main {
 				max-width: 640px;
@@ -23,7 +22,7 @@ const posts = (await getCollection('blog')).sort(
 				flex: 1;
 			}
 			.page-title {
-				font-family: 'Fraunces', Georgia, serif;
+				font-family: Georgia, serif;
 				font-weight: 700;
 				font-size: 64px;
 				color: #1C1A17;
@@ -38,7 +37,7 @@ const posts = (await getCollection('blog')).sort(
 				margin-bottom: 40px;
 			}
 			.post-title {
-				font-family: 'Fraunces', Georgia, serif;
+				font-family: Georgia, serif;
 				font-weight: 700;
 				font-size: 24px;
 				color: #1C1A17;
