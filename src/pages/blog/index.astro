@@ -42,6 +42,11 @@ const posts = (await getCollection('blog')).sort(
 			}
 			li {
 				margin-bottom: 40px;
+				max-width: 100%;
+			}
+			li a {
+				display: block;
+				max-width: 100%;
 			}
 			.post-title {
 				font-family: Georgia, serif;
