@@ -16,6 +16,13 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			* {
+					box-sizing: border-box;
+					max-width: 100%;
+				}
+				body {
+					overflow-x: hidden;
+				}
 			main {
 				max-width: 640px;
 				padding: 60px 24px 100px;
@@ -24,7 +31,7 @@ const posts = (await getCollection('blog')).sort(
 			.page-title {
 				font-family: Georgia, serif;
 				font-weight: 700;
-				font-size: 64px;
+				font-size: clamp(36px, 10vw, 64px);
 				color: #1C1A17;
 				margin-bottom: 50px;
 			}

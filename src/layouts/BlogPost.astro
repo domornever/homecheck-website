@@ -127,11 +127,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 
 			/* ── Tables ───────────────────────────────────────────────────── */
+			.prose :global(.table-wrapper) {
+				overflow-x: auto;
+				margin: 1.6em 0;
+				-webkit-overflow-scrolling: touch;
+			}
 			.prose :global(table) {
 				width: 100%;
+				min-width: 480px;
 				border-collapse: collapse;
-				margin: 1.6em 0;
 				font-size: 14px;
+				margin: 0;
 			}
 			.prose :global(th) {
 				background: #F7F4EE;
@@ -193,4 +199,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		</main>
 		<Footer />
 	</body>
+	<script>
+	// Automatically wrap all tables in a scrollable container
+	document.querySelectorAll('.prose table').forEach((table) => {
+		const wrapper = document.createElement('div');
+		wrapper.className = 'table-wrapper';
+		table.parentNode?.insertBefore(wrapper, table);
+		wrapper.appendChild(table);
+	});
+</script>
 </html>
