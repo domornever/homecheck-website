@@ -46,13 +46,15 @@ const posts = (await getCollection('blog')).sort(
 			.post-title {
 				font-family: Georgia, serif;
 				font-weight: 700;
-				font-size: 24px;
+				font-size: clamp(18px, 5vw, 24px);
 				color: #1C1A17;
 				text-decoration: underline;
 				text-decoration-thickness: 2px;
 				text-underline-offset: 3px;
 				margin: 0 0 12px;
-				display: inline-block;
+				display: block;
+				word-wrap: break-word;
+				overflow-wrap: break-word;
 			}
 			.post-title:hover {
 				color: #C5613A;
