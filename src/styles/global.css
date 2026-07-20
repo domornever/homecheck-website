@@ -6,6 +6,12 @@
 * {
 	outline: 1px solid red !important;
 }
+main {
+	outline: 3px solid blue !important;
+}
+body {
+	outline: 3px solid lime !important;
+}
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
