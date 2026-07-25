@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { calculateEligibility } from './eligibility'
 
 // ── All quiz steps (both paths share this list) ──────────────────────────────
@@ -180,30 +180,26 @@ const submitLead = async () => {
     goTo('intro')
   }
 
+  useEffect(() => {
+  const handleBeforeUnload = (e) => {
+    if (step !== 'intro' && step !== 'results') {
+      e.preventDefault()
+      e.returnValue = ''
+    }
+  }
+  window.addEventListener('beforeunload', handleBeforeUnload)
+  return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+}, [step])
+
   const effectiveSteps = getEffectiveSteps(answers)
   const quizStepIndex  = effectiveSteps.indexOf(step)
   const quizTotalSteps = effectiveSteps.length
   const showBack       = step !== 'intro' && step !== 'results'
 
-  return (
+return (
     <div className="app">
-      <header className="header">
-        <a
-          href="/"
-          className="logo"
-          onClick={(e) => {
-            if (step !== 'intro' && step !== 'results') {
-              const confirmed = window.confirm('Are you sure you want to leave? Your quiz progress will be lost.')
-              if (!confirmed) e.preventDefault()
-            }
-          }}
-        >
-          Home <span className="logo-sg">Theory</span>
-        </a>
-        {showBack && <button className="back-btn" onClick={handleBack}>← Back</button>}
-      </header>
-
       <main className="main">
+        {showBack && <button className="back-btn" onClick={handleBack}>← Back</button>}
         <div key={animKey} className={`screen-anim${step === 'results' ? ' screen-anim--wide' : ''}`}>
 
           {step === 'intro' && <IntroScreen onStart={() => goTo('age')} />}

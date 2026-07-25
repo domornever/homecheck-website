@@ -1,53 +1,43 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<div class="hero">
-				<div class="hero-left">
-					<h1 class="h1">Welcome to Home Theory</h1>
-					<p class="hbody">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
-					<div class="btnrow">
-						<a href="/quiz" class="btn quiz">
-							<div class="b-title">Quiz</div>
-							<div class="b-desc">Answer 6 quick questions and see exactly what you can buy, with grant estimates.</div>
-						</a>
-						<a href="/blog" class="btn blog">
-							<div class="b-title">Blog</div>
-							<div class="b-desc">Guides on BTO, resale, grants, and eligibility rules — explained in plain English.</div>
-						</a>
-					</div>
-				</div>
-				<div class="hero-right">
-					<img src="/House-searching-pana.png" alt="Illustration of a person searching for a home" />
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<main>
+		<div class="hero">
+			<div class="hero-left">
+				<h1 class="h1">Welcome to Home Theory</h1>
+				<p class="hbody">A friendly guide to Singapore property — check your eligibility, or learn how it all works.</p>
+				<div class="btnrow">
+					<a href="/quiz" class="btn quiz">
+						<div class="b-title">Quiz</div>
+						<div class="b-desc">Answer 6 quick questions and see exactly what you can buy, with grant estimates.</div>
+					</a>
+					<a href="/blog" class="btn blog">
+						<div class="b-title">Blog</div>
+						<div class="b-desc">Guides on BTO, resale, grants, and eligibility rules — explained in plain English.</div>
+					</a>
 				</div>
 			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+			<div class="hero-right">
+				<img src="/House-searching-pana.png" alt="Illustration of a person searching for a home" />
+			</div>
+		</div>
+	</main>
+</BaseLayout>
 
 <style>
 	* {
 		box-sizing: border-box;
 	}
-main {
-    width: 100%;
-    max-width: 1200px;
-    padding: 60px 40px;
-    margin: 0 auto;
-    flex: 1;
-}
+	main {
+		width: 100%;
+		max-width: 1200px;
+		padding: 60px 40px;
+		margin: 0 auto;
+		flex: 1;
+	}
 	.hero {
 		display: flex;
 		align-items: center;

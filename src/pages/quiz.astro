@@ -1,17 +1,12 @@
 ---
-import Layout from '../layouts/BlogPost.astro'
-import Quiz from '../components/Quiz.jsx'
-import '../components/index.css'
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Quiz from '../components/Quiz.jsx';
+import '../components/index.css';
 ---
 
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>HomeCheckSG — Check Your Property Eligibility</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
-</head>
-  <body>
-    <Quiz client:load />
-  </body>
-</html>
+<BaseLayout
+  title="Singapore Property Eligibility Quiz — Home Theory"
+  description="Answer a few quick questions to find out what flat types you can buy, your ABSD rates, and which HDB grants you qualify for."
+>
+  <Quiz client:load />
+</BaseLayout>
