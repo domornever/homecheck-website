@@ -23,7 +23,7 @@ pubDate: '2026-09-22'
 
 The day your MOP ends, you get a rush of options — sell, rent out a room, or finally go for that second flat. But a lot of second-timers assume reapplying for a new BTO means redoing the eligibility process from scratch, re-learning rules they've half-forgotten since their first application.
 
-MOP fulfilled reapply BTO second timer applications open once your current flat's Minimum Occupation Period ends, submitted through HDB's InfoWeb portal. Second-timers receive one ballot chance versus two for first-timers, and HDB recommends starting the HFE letter application before MOP ends, since it takes up to a month to process and stays valid nine months.
+MOP fulfilled reapply BTO second timer applications open once your current flat's Minimum Occupation Period ends, submitted through HDB's InfoWeb portal. Second-timers compete for a smaller share of flats than first-timers, and HDB recommends starting the HFE letter application before MOP ends, since it takes up to a month to process and stays valid nine months.
 
 **Not sure where you stand?** [Check your eligibility in 2 minutes](https://hometheory.sg/quiz/)
 
@@ -34,7 +34,7 @@ This guide walks through what second-timer status actually means for your ballot
 
 Before you plan your next move, it helps to know exactly what "second-timer" means to HDB, because it changes your ballot odds. HDB classifies you as a second-timer if you, or anyone listed in your flat application, have previously owned or sold a residential property — including an earlier HDB flat. It doesn't matter whether that property was sold years ago or is the flat you're living in right now and about to sell. If it shows up anywhere in your household's ownership history, you're a second-timer for this application.
 
-That status carries a real cost at the ballot stage. First-timer applicants get two ballot chances in a BTO or SBF exercise; second-timers get only one ([HDB Priority Schemes (Application)](https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/process-for-buying-a-new-flat/application/priority-schemes)). That's not a project-specific quirk — it's built into the ballot mechanics themselves, so it holds whether you're chasing a popular estate or a quieter one.
+That status carries a real cost at the ballot stage. HDB sets aside a higher proportion of flats for first-timer families — for example, for 4-room and bigger BTO flats, at least 90% of the public supply goes to first-timers and up to 10% to second-timers ([HDB, Annex B: February 2026 BTO and SBF exercises](https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/hdb-launches-9012-flats-in-february-2026-bto-and-sbf-exercises/Annex-B.pdf)). First-timer families also earn extra ballot chances after repeated unsuccessful Standard-flat BTO applications, up to 5 in total ([MyNiceHome: Priority Schemes for HDB BTO Flat Buyers](https://www.mynicehome.gov.sg/get-started/hdb-priority-schemes-guide/)). Those advantages are for first-timer families, not second-timers. They're built into how flats are allocated, not a project-specific quirk, so they apply whether you're chasing a popular estate or a quieter one.
 
 Practically, this means your odds on any single BTO exercise are lower than they were the first time round. Factor that into your project shortlist and your overall timeline: it's worth applying across a few exercises rather than pinning your plans on one, and worth treating Sale of Balance Flats as a genuine parallel option rather than a fallback.
 
@@ -79,7 +79,7 @@ Neither path gets you out of the ballot disadvantage or the resale levy — they
 Yes — once your current flat's Minimum Occupation Period is fully served, you can apply for a second BTO flat through HDB's InfoWeb portal. There's no separate cooldown after MOP; completion itself is what unlocks the application.
 
 ### Can a 2nd timer apply for BTO?
-Yes, but your odds differ from a first attempt. HDB classifies you as a second-timer if you or anyone in your application has previously owned or sold a residential property, and second-timers get one ballot chance per exercise versus two for first-timers.
+Yes, but your odds differ from a first attempt. HDB classifies you as a second-timer if you or anyone in your application has previously owned or sold a residential property, and first-timer families get a higher share of flats and extra ballot chances that second-timers don't.
 
 ### Can I apply for BTO while waiting for MOP?
 No. This is really the same question as can I apply for BTO after selling my flat — and the answer is the same either way: you can only submit a BTO application once your MOP has been fully served. You can't apply while it's still counting down, even if your current flat is already sold or under offer.
