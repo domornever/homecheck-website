@@ -61,7 +61,7 @@ One sequencing point worth stating plainly: you can only apply after MOP is fulf
 
 Reapplying as a second-timer comes with a cost first-timers don't pay: the resale levy. It only kicks in when you book another subsidized flat directly from HDB — a BTO, SBF, or EC unit. Buy a resale flat or private property instead, and no levy applies at all ([HDB Conditions After Buying a New Flat](https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/conditions-after-buying-a-new-flat)).
 
-The amount is fixed by the flat type you sold, not the one you're buying: $15,000 for a 2-room flat, $30,000 for 3-room, $40,000 for 4-room, $45,000 for 5-room, and $50,000 for an Executive flat. It's payable only in cash or from your flat's sale proceeds — you can't draw on your CPF Ordinary Account or a housing loan to cover it, so factor it into your cash planning early rather than at the point of booking.
+The amount is based on the flat type you sold, not the one you're buying, and HDB sets a minimum for each: $15,000 for a 2-room flat, $30,000 for 3-room, $40,000 for 4-room, $45,000 for 5-room, and $50,000 for an Executive flat. HDB tells you the exact amount when you book your flat. It's payable in cash before key collection — you can't draw on your CPF savings or a housing loan to cover it, so factor it into your cash planning early rather than at the point of booking.
 
 It's worth checking your second-timer housing grant eligibility alongside the levy, so you're weighing the full financial picture — what you'll pay out and what you might still receive — rather than looking at the levy in isolation.
 
