@@ -27,7 +27,7 @@ MOP fulfilled reapply BTO second timer applications open once your current flat'
 
 **Not sure where you stand?** [Check your eligibility in 2 minutes](https://hometheory.sg/quiz/)
 
-This guide walks through what second-timer status actually means for your ballot odds, when to start your HFE letter so you're not stuck waiting after MOP, the exact steps to reapply, the resale levy you'll need to budget for, and a couple of backup options if BTO timing doesn't line up. If you haven't checked the [HDB flat eligibility requirements](https://hometheory.sg/blog/hdb-flat-eligibility-hfe-letter-application/) before, that's worth a read first — it covers the baseline eligibility checks every application starts from.
+This guide walks through what second-timer status actually means for your ballot odds, when to start your HFE letter so you're not stuck waiting after MOP, the exact steps to reapply, the resale levy you'll need to budget for, and a backup option if BTO timing doesn't line up. If you haven't checked the [HDB flat eligibility requirements](https://hometheory.sg/blog/hdb-flat-eligibility-hfe-letter-application/) before, that's worth a read first — it covers the baseline eligibility checks every application starts from.
 
 ## 1. Understand Your Second-Timer Status and Ballot Chances
 <!-- info-gain anchor: angle 1 -->
@@ -65,13 +65,11 @@ The amount is fixed by the flat type you sold, not the one you're buying: $15,00
 
 It's worth checking your second-timer housing grant eligibility alongside the levy, so you're weighing the full financial picture — what you'll pay out and what you might still receive — rather than looking at the levy in isolation.
 
-## 5. Other Paths If BTO Timing Doesn't Work Out
+## 5. Another Path If BTO Timing Doesn't Work Out
 
 BTO isn't the only subsidized-flat route open to you. [Sale of Balance Flats eligibility](https://hometheory.sg/blog/sale-of-balance-flats-sbf-eligibility/) runs on different ballot dynamics than BTO and is worth shortlisting if your BTO odds look thin on paper — it draws from unselected units across past exercises, so the pool and timing differ.
 
-If your situation fits, the SC Premium Plus BTO options scheme may also be worth a look, particularly if priority or timeline considerations matter to your household.
-
-Neither path gets you out of the ballot disadvantage or the resale levy — they widen your options, not your exemptions. Treat them as parallel tracks worth running alongside your BTO applications, not a way around the rules above.
+It doesn't get you out of the ballot disadvantage or the resale levy — it widens your options, not your exemptions. Treat it as a parallel track worth running alongside your BTO applications, not a way around the rules above.
 
 ## 6. FAQ
 
