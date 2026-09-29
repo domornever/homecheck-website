@@ -7,7 +7,7 @@ category: BTO Eligibility & Application
 focus_keywords: MOP fulfilled reapply BTO second timer, MOP completed reapply for
   flat, can I apply for BTO after selling my flat
 description: MOP fulfilled reapply BTO second timer applications open once your current
-  flat's Minimum Occupation Period ends, submitted through HDB's InfoWeb portal.
+  flat's Minimum Occupation Period ends, submitted through the HDB Flat Portal.
 author: Home Theory Editorial Team
 featured_image: 1-4-mop-fulfilled-reapply-bto-second-timer.png
 featured_image_alt: MOP Fulfilled? Here's How to Reapply for a BTO as a Second-Timer
@@ -23,7 +23,7 @@ pubDate: '2026-09-22'
 
 The day your MOP ends, you get a rush of options — sell, rent out a room, or finally go for that second flat. But a lot of second-timers assume reapplying for a new BTO means redoing the eligibility process from scratch, re-learning rules they've half-forgotten since their first application.
 
-MOP fulfilled reapply BTO second timer applications open once your current flat's Minimum Occupation Period ends, submitted through HDB's InfoWeb portal. Second-timers receive one ballot chance versus two for first-timers, and HDB recommends starting the HFE letter application before MOP ends, since it takes up to a month to process and stays valid nine months.
+MOP fulfilled reapply BTO second timer applications open once your current flat's Minimum Occupation Period ends, submitted through the HDB Flat Portal. Second-timers receive one ballot chance versus two for first-timers, and HDB recommends starting the HFE letter application before MOP ends, since it takes up to a month to process and stays valid nine months.
 
 **Not sure where you stand?** [Check your eligibility in 2 minutes](https://hometheory.sg/quiz/)
 
@@ -51,17 +51,17 @@ Here's the part that trips people up: processing takes up to a month after you'v
 
 If you searched MOP fulfilled reapply BTO second timer expecting a complicated checklist, here's the good news: once your MOP is behind you, the process itself is straightforward — it's the timing that catches people out.
 
-Start by confirming your MOP completion date through HDB's InfoWeb portal. Applications only open once MOP has been fully served. There's no partial credit for "almost done," and no exception for a flat that's already under offer.
+Start by confirming your MOP completion date through HDB's Check Flat Details e-Service. Applications only open once MOP has been fully served. There's no partial credit for "almost done," and no exception for a flat that's already under offer.
 
-Next, make sure your HFE letter is active — you'll need it live at the point you submit, not just requested. Then submit your BTO application through HDB's InfoWeb portal once both conditions, MOP served and HFE letter active, are met.
+Next, make sure your HFE letter is active — you'll need it live at the point you submit, not just requested. Then submit your BTO application through the HDB Flat Portal once both conditions, MOP served and HFE letter active, are met.
 
 One sequencing point worth stating plainly: you can only apply after MOP is fulfilled, not while you're still counting down, and it doesn't matter whether your current flat is already sold. Selling early doesn't unlock an earlier application window — MOP completion is the trigger, full stop.
 
 ## 4. Budget for the Resale Levy
 
-Reapplying as a second-timer comes with a cost first-timers don't pay: the resale levy. It only kicks in when you book another subsidized flat directly from HDB — a BTO, SBF, or EC unit. Buy a resale flat or private property instead, and no levy applies at all ([HDB Conditions After Buying a New Flat](https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/conditions-after-buying-a-new-flat)).
+Reapplying as a second-timer comes with a cost first-timers don't pay: the resale levy. It only kicks in when you book a second subsidised flat directly from HDB — a BTO, SBF, or open-booking flat. Buy a resale flat or private property instead, and no levy applies at all ([HDB Conditions After Buying a New Flat](https://www.hdb.gov.sg/buying-a-flat/bto-sbf-and-open-booking-of-flats/conditions-after-buying-a-new-flat)).
 
-The amount is fixed by the flat type you sold, not the one you're buying: $15,000 for a 2-room flat, $30,000 for 3-room, $40,000 for 4-room, $45,000 for 5-room, and $50,000 for an Executive flat. It's payable only in cash or from your flat's sale proceeds — you can't draw on your CPF Ordinary Account or a housing loan to cover it, so factor it into your cash planning early rather than at the point of booking.
+The amount is fixed by the flat type you sold, not the one you're buying. If you sold your first subsidised flat on or after 3 March 2006, a family pays $15,000 for a 2-room flat, $30,000 for 3-room, $40,000 for 4-room, $45,000 for 5-room, $50,000 for an Executive flat and $55,000 for an Executive Condominium, while singles pay half. It's payable only in cash or from your flat's sale proceeds — a housing loan can't cover it. If you sell your first flat after collecting the keys to the new one, the levy is deducted from your net sale proceeds and any shortfall is paid in cash; if you sold before key collection, you pay the full amount in cash when you collect the keys. Factor it into your cash planning early rather than at the point of booking.
 
 It's worth checking your second-timer housing grant eligibility alongside the levy, so you're weighing the full financial picture — what you'll pay out and what you might still receive — rather than looking at the levy in isolation.
 
@@ -76,7 +76,7 @@ Neither path gets you out of the ballot disadvantage or the resale levy — they
 ## 6. FAQ
 
 ### Can I still apply for BTO again after MOP my BTO?
-Yes — once your current flat's Minimum Occupation Period is fully served, you can apply for a second BTO flat through HDB's InfoWeb portal. There's no separate cooldown after MOP; completion itself is what unlocks the application.
+Yes — once your current flat's Minimum Occupation Period is fully served, you can apply for a second BTO flat through the HDB Flat Portal. There's no separate cooldown after MOP; completion itself is what unlocks the application.
 
 ### Can a 2nd timer apply for BTO?
 Yes, but your odds differ from a first attempt. HDB classifies you as a second-timer if you or anyone in your application has previously owned or sold a residential property, and second-timers get one ballot chance per exercise versus two for first-timers.
@@ -89,6 +89,6 @@ HDB looks at whether you, or anyone listed in your flat application, has previou
 
 ## Conclusion
 
-MOP completion is the real trigger here. Once it's served, you can apply for a second BTO through HDB's InfoWeb portal, but second-timer status brings a genuine ballot disadvantage, a resale levy to budget for, and an HFE letter clock that needs to start before MOP ends, not after. Line up those three pieces early, and reapplying becomes a formality rather than a scramble.
+MOP completion is the real trigger here. Once it's served, you can apply for a second BTO through the HDB Flat Portal, but second-timer status brings a genuine ballot disadvantage, a resale levy to budget for, and an HFE letter clock that needs to start before MOP ends, not after. Line up those three pieces early, and reapplying becomes a formality rather than a scramble.
 
 **Ready to find out what you qualify for?** [Take the Home Theory eligibility quiz](https://hometheory.sg/quiz/)
