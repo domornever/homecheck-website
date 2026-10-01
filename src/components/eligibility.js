@@ -223,7 +223,7 @@ let privateProp = { status: 'eligible', notes: [] }
       })
     }
 // CPF Family Grant (resale) — amounts vary by flat size
-    if (isFamily && resale.status === 'eligible') {
+    if (isFamily && resale.status === 'eligible' && income <= 14000) {
       const scsc = isSC && partnerIsSC
       grants.push({
         name: 'CPF Housing Grant (Family Grant)',
@@ -231,8 +231,8 @@ let privateProp = { status: 'eligible', notes: [] }
           ? '$80,000 (2–4 room) or $50,000 (5-room+)'
           : '$70,000 (2–4 room) or $40,000 (5-room+)',
         desc: scsc
-          ? 'For first-timer SC+SC families buying a resale HDB flat. Amount depends on flat size.'
-          : 'For first-timer SC+PR families buying a resale HDB flat. SC+PR households receive $10,000 less than SC+SC. Amount depends on flat size.',
+          ? 'For first-timer SC+SC families buying a resale HDB flat. Income ceiling $14,000/month. Amount depends on flat size.'
+          : 'For first-timer SC+PR families buying a resale HDB flat. Income ceiling $14,000/month. SC+PR households receive $10,000 less than SC+SC. Amount depends on flat size.',
       })
     }
 
