@@ -66,10 +66,10 @@ export function calculateEligibility(answers) {
     bto.notes.push('Minimum age for BTO is 21 years old.')
   } else if (isSingle && !is35Plus && !isWidowedOrphan) {
     bto.notes.push('Single applicants under 35 must be widowed or orphaned to buy BTO. Standard singles must be 35 or above.')
-  } else if (isSingle && income > 7000) {
-    bto.notes.push('Income ceiling for singles is $7,000/month for BTO. Your income exceeds this limit.')
-  } else if (isFamily && income > 14000) {
-    bto.notes.push('Income ceiling for families is $14,000/month for BTO. Your income exceeds this limit.')
+  } else if (isSingle && income > 8000) {
+    bto.notes.push('Income ceiling for singles is $8,000/month for BTO (raised from $7,000 on 24 Aug 2026). Your income exceeds this limit.')
+  } else if (isFamily && income > 16000) {
+    bto.notes.push('Income ceiling for families is $16,000/month for BTO (raised from $14,000 on 24 Aug 2026). Your income exceeds this limit.')
   } else if (ownsPrivate) {
     bto.status = 'conditions'
     bto.notes.push('You must dispose of all private property and wait 30 months before applying for BTO.')
@@ -116,7 +116,7 @@ if (isPR && isFamily)   resale.notes.push('As a PR, you must form an essential f
     if (is55Plus)                           resale.notes.push('Consider a smaller flat for rightsizing. You may qualify for the Silver Housing Bonus.')
     if (isFiancee)                          resale.notes.push('Fiancé/fiancée scheme: marriage certificate must be submitted within 3 months of resale completion.')
     if (isSingle && isWidowedOrphan && !is35Plus) resale.notes.push('Age exception applies as a widowed or orphaned applicant — eligible from age 21.')
-    if (isSingle && income > 7000)          resale.notes.push('No CPF housing grants available for singles with income above $7,000/month.')
+    if (isSingle && income > 8000)          resale.notes.push('No CPF housing grants available for singles with income above $8,000/month (ceiling raised from $7,000 on 24 Aug 2026).')
     if (isPR && partnerIsSC)                resale.notes.push('Eligible because your SC partner satisfies the family nucleus requirement.')
   }
 
@@ -134,8 +134,8 @@ let ec = { status: 'ineligible', notes: [] }
     ec.notes.push('Joint Singles Scheme for EC requires all applicants to be 35 or above. No age-21 exception applies, even if widowed or orphaned.')
   } else if (isUnder21) {
     ec.notes.push('Minimum age for EC is 21 years old.')
-  } else if (income > 16000) {
-    ec.notes.push('Income ceiling for EC is $16,000/month. Your income exceeds this limit.')
+  } else if (income > 18000) {
+    ec.notes.push('Income ceiling for EC is $18,000/month (raised from $16,000 on 24 Aug 2026). Your income exceeds this limit.')
   } else if (ownsPrivate) {
     ec.status = 'conditions'
     ec.notes.push('You must not have disposed of any private property within the last 30 months.')
@@ -146,7 +146,7 @@ let ec = { status: 'ineligible', notes: [] }
       ec.status = 'conditions'
       ec.notes.push("You must sell your HDB flat within 6 months of the EC's Temporary Occupation Permit (TOP) date.")
     }
-    if (income > 14000)    ec.notes.push('Your household income is below the $16,000/month EC ceiling — you are eligible.')
+    if (income > 16000)    ec.notes.push('Your household income is below the $18,000/month EC ceiling — you are eligible. Note: the $18,000 ceiling only applies to EC projects with tender closing dates on or after 24 Aug 2026. EC launches currently on sale may still use the $16,000 ceiling.')
     if (isPR && partnerIsSC) ec.notes.push('EC eligible because your SC partner satisfies the citizenship requirement.')
   }
 
@@ -244,15 +244,15 @@ let privateProp = { status: 'eligible', notes: [] }
         desc: 'Buy a resale flat to live with parents/children: $30,000. Within 4km of parents/children: $20,000. No income ceiling.',
       })
     }
-    if (isSingle && income > 7000) {
+    if (isSingle && income > 8000) {
       grants.push({
         name: 'CPF Housing Grants — Not Available',
         amount: 'Not eligible',
-        desc: 'Your income exceeds $7,000/month. CPF housing grants for singles are not available above this threshold.',
+        desc: 'Your income exceeds $8,000/month. CPF housing grants for singles are not available above this threshold (ceiling raised from $7,000 on 24 Aug 2026).',
       })
     }
     // CPF Singles Grant
-    if (isSingle && is35Plus && income <= 7000 && resale.status === 'eligible') {
+    if (isSingle && is35Plus && income <= 8000 && resale.status === 'eligible') {
       grants.push({
         name: 'CPF Singles Grant',
         amount: 'Up to $40,000',
@@ -261,7 +261,7 @@ let privateProp = { status: 'eligible', notes: [] }
     }
 
     // EHG Singles
-    if (isSingle && is35Plus && income <= 7000) {
+    if (isSingle && is35Plus && income <= 8000) {
       grants.push({
         name: 'Enhanced CPF Housing Grant (EHG) — Singles',
         amount: 'Up to $60,000',

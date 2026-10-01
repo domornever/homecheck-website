@@ -103,7 +103,8 @@ const QUESTIONS = {
     options: [
       { value: 3000,  label: 'Below $3,000' },
       { value: 7000,  label: '$3,001 – $7,000' },
-      { value: 10000, label: '$7,001 – $10,000' },
+      { value: 8000,  label: '$7,001 – $8,000' },
+      { value: 10000, label: '$8,001 – $10,000' },
       { value: 14000, label: '$10,001 – $14,000' },
       { value: 16000, label: '$14,001 – $16,000' },
       { value: 20000, label: 'Above $16,000' },
