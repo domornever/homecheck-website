@@ -107,7 +107,7 @@ Yes. Your HFE letter — the document that confirms your SBF eligibility, grant 
 
 ### What is the Sale of Balance Flats (SBF) 2026 exercise, and who can apply?
 
-The SBF exercise runs periodically and opens to eligible Singapore Citizen and Permanent Resident households who meet the standard citizenship, income, and family nucleus criteria covered above. If you don't meet the standard household criteria, it's worth checking whether the 2-room Flexi eligibility criteria fit your situation instead.
+The SBF exercise runs periodically and opens to eligible Singapore Citizen and Permanent Resident households who meet the standard citizenship, income, and family nucleus criteria covered above. If you don't meet the standard household criteria, it's worth checking whether the [2-room Flexi eligibility criteria](https://hometheory.sg/blog/2-room-flexi-eligibility-criteria/) fit your situation instead.
 
 ## Conclusion
 
