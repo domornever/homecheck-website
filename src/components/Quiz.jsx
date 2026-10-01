@@ -107,7 +107,8 @@ const QUESTIONS = {
       { value: 10000, label: '$8,001 – $10,000' },
       { value: 14000, label: '$10,001 – $14,000' },
       { value: 16000, label: '$14,001 – $16,000' },
-      { value: 20000, label: 'Above $16,000' },
+      { value: 18000, label: '$16,001 – $18,000' },
+      { value: 20000, label: 'Above $18,000' },
     ],
   },
   propertyOwnership: {
@@ -237,7 +238,7 @@ return (
       </main>
 
       <footer className="footer">
-        <p>Based on HDB guidelines as of 2025. For official information visit{' '}
+        <p>Based on HDB guidelines as of 2026. For official information visit{' '}
           <a href="https://www.hdb.gov.sg" target="_blank" rel="noopener noreferrer">hdb.gov.sg</a>
         </p>
       </footer>
