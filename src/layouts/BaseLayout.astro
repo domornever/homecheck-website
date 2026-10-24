@@ -25,6 +25,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
       <script define:vars={{ gaId }}>
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag; // define:vars wraps this script in a function; expose gtag for src/analytics/track.js
         gtag('js', new Date());
         gtag('config', gaId);
       </script>
@@ -35,5 +36,6 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
   <Header />
   <slot />
   <Footer />
+  <script>import '../analytics/listener.js'</script>
 </body>
 </html>
