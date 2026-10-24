@@ -175,7 +175,7 @@ const submitLead = async () => {
       const response = await fetch('/api/submit-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ lead, answers, eligibility: res }),
+        body: JSON.stringify({ lead, answers, eligibility: res, source_page: getSourcePage() }),
       })
       const data = await response.json()
       if (data.recordId) {
