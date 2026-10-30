@@ -11,7 +11,7 @@ GA4 also records its own automatic and enhanced-measurement events (`page_view`,
 
 | Event | Fires when | Parameters | Where in code |
 |---|---|---|---|
-| `cta_click` | An element with `data-track="cta_click"` is clicked (header button, home page quiz button) | `cta_location`, `cta_text`, `source_page` | `src/analytics/listener.js` |
+| `cta_click` | An element with `data-track="cta_click"` is clicked (header button, home page quiz button, every quiz link in a blog post) | `cta_location`, `cta_text`, `source_page` | `src/analytics/listener.js` |
 | `quiz_start` | The visitor clicks "Check my eligibility" on the quiz intro screen | `source_page` | `Quiz.jsx`, `IntroScreen` `onStart` |
 | `quiz_question_answered` | A question is answered (including re-answers after going Back) | `step`, `step_name`, `source_page` | `Quiz.jsx`, `handleAnswer` |
 | `quiz_exit` | The visitor lands on a dead-end screen | `exit_reason`, `source_page` | `Quiz.jsx`, `goTo` |
@@ -26,7 +26,7 @@ Neither fires if the save fails, even though the results screen still shows.
 
 | Parameter | Values |
 |---|---|
-| `cta_location` | `header`, `home_hero` |
+| `cta_location` | `header`, `home_hero`, `blog` |
 | `cta_text` | Link text, up to 100 characters (`Check my eligibility`, `Quiz`) |
 | `source_page` | Path of the page that sent the visitor to the quiz, such as `/blog/mop-rules/`. `(direct)` if there was no referrer, `(external)` if the referrer was another site. On `cta_click` it is the page the click happened on. |
 | `step` | Position in the visitor's own question list, starting at 1 (the list differs for singles and couples) |
@@ -37,6 +37,9 @@ Neither fires if the save fails, even though the results screen still shows.
 Answers themselves (age, income, citizenship value) are never sent.
 
 ## Adding a CTA
+
+Quiz links in blog Markdown need nothing: `src/analytics/rehype-track-quiz-links.js` tags them at build time
+(`/quiz`, `/quiz/` and `https://hometheory.sg/quiz/`, with `cta_location=blog`). For anywhere else:
 
 Put the attributes on any link or button. No JavaScript needed:
 
