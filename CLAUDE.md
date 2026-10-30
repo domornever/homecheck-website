@@ -36,7 +36,6 @@ and what grants they qualify for.
 
 ## Blog articles
 - Stored in src/content/blog/*.md
-- Frontmatter needs: title, pubDate, description
 - Images go in public/blog-images/<article-name>/
 - Always end articles with a quiz CTA link to /quiz
 
