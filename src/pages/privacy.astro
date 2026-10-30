@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// DRAFT: fill these in before this page goes live. They are not in the codebase, so they are not guessed.
+const CONTACT_EMAIL = '[contact email: owner to confirm]';
+const RETENTION = '[retention period: owner to confirm]';
+const UPDATED = '30 October 2026';
+---
+
+<BaseLayout title="Privacy — Home Theory" description="What personal data Home Theory collects, why, who sees it, and how to ask us to change or delete it.">
+	<main>
+		<h1 class="title">Privacy</h1>
+		<p class="meta">Last updated {UPDATED}</p>
+
+		<p class="p">Home Theory (hometheory.sg) helps people check which HDB and property options they may qualify for. This page explains what we collect, why, and the choices you have. We follow Singapore's Personal Data Protection Act (PDPA).</p>
+
+		<h2>Just reading or using the quiz</h2>
+		<p class="p">You do not need an account, and you do not have to give us any personal details to read our guides or run the eligibility quiz. Your quiz answers are worked out in your browser. They are only sent to us if you choose to submit your details (see below).</p>
+
+		<h2>Analytics cookies (only if you accept)</h2>
+		<p class="p">We use Google Analytics to see which guides are useful and where people drop out of the quiz. It is switched off until you click <strong>Accept</strong> on the banner. If you decline or ignore the banner, Google Analytics is not loaded and nothing is sent to Google. The quiz works the same either way.</p>
+		<p class="p">If you accept, Google Analytics sets cookies and records things like the pages you visit, which quiz step you reach, which guide sent you to the quiz, and your approximate location and device type. We do not send your name, email or phone number to Google Analytics, and advertising storage is switched off.</p>
+		<p class="p">We remember your choice in your browser (local storage). To change your mind, use <strong>Analytics settings</strong> in the footer; this clears the saved choice and asks again. Cookies Google has already set stay on your device until they expire or you delete them in your browser settings.</p>
+		<p class="p">We also keep the name of the page that sent you to the quiz in your browser's session storage while the tab is open, so we know which guide led you there. It is deleted when you close the tab.</p>
+
+		<h2>If you submit your details</h2>
+		<p class="p">At the end of the quiz you can ask for a property specialist to contact you. If you do, and you tick the consent box, we collect:</p>
+		<ul class="list">
+			<li>your name, email address and, if you give it, phone number;</li>
+			<li>your quiz answers: age, citizenship, buyer type, partner's citizenship, whether you are widowed or an orphan, income bracket, and property ownership;</li>
+			<li>your eligibility results;</li>
+			<li>the page that sent you to the quiz, the time you submitted, and a record that you gave consent; and</li>
+			<li>whether you asked for an agent to contact you.</li>
+		</ul>
+		<p class="p"><strong>Why:</strong> to let a property specialist contact you about your results, and to understand which guides lead to enquiries. We only contact you about this if you have asked us to.</p>
+		<p class="p"><strong>Who sees it:</strong> the Home Theory team, and the partner property specialists who contact you. Our service providers handle it on our behalf: Airtable (stores the records), Resend (sends us a notification email) and Netlify (hosts the site). Some of these providers may store data outside Singapore. We do not sell your data.</p>
+		<p class="p"><strong>How long:</strong> {RETENTION}</p>
+
+		<h2>Your choices</h2>
+		<p class="p">You can ask us to tell you what personal data we hold about you, correct it, or delete it, and you can withdraw your consent to be contacted at any time. Email {CONTACT_EMAIL}. We will reply within a reasonable time. Withdrawing consent does not affect anything done before you withdrew it.</p>
+
+		<h2>Changes</h2>
+		<p class="p">If we change what we collect, we will update this page and its date.</p>
+	</main>
+</BaseLayout>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	main {
+		width: 100%;
+		max-width: 760px;
+		padding: 60px 40px 100px;
+		margin: 0 auto;
+		flex: 1;
+	}
+	.title {
+		font-family: Georgia, serif;
+		font-size: clamp(32px, 5vw, 42px);
+		font-weight: 700;
+		color: #1C1A17;
+		margin: 0 0 8px;
+	}
+	.meta {
+		font-size: 14px;
+		color: #5A5040;
+		margin: 0 0 32px;
+	}
+	h2 {
+		font-family: Georgia, serif;
+		font-size: 22px;
+		color: #1C1A17;
+		margin: 36px 0 12px;
+	}
+	.p,
+	.list {
+		font-size: 16px;
+		color: #3A3733;
+		line-height: 1.7;
+		margin: 0 0 18px;
+	}
+	.list {
+		padding-left: 22px;
+	}
+</style>
