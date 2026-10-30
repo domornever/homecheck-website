@@ -7,3 +7,14 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# The post used to be published at a slug ending in "-draft".
+[[redirects]]
+  from = "/blog/hfe-appeal-overseas-property-draft"
+  to = "/blog/hfe-appeal-overseas-property/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/hfe-appeal-overseas-property-draft/"
+  to = "/blog/hfe-appeal-overseas-property/"
+  status = 301

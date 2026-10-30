@@ -67,7 +67,7 @@ You can now plan your sale and purchase simultaneously. No need to sell first, r
 Previously you were the only group exempted — but only for a 4-room or smaller flat. That size restriction is now gone. If you were holding off because you needed a 5-room flat or more space, that path is now open.
 
 **If you own overseas property:**
-The rule applies to overseas private property owners too. You can buy the resale flat first and dispose of the overseas property within 6 months of completion. Read our earlier guide on [how some buyers successfully appealed their HFE letter while holding overseas property](/blog/hfe-appeal-overseas-property-draft).
+The rule applies to overseas private property owners too. You can buy the resale flat first and dispose of the overseas property within 6 months of completion. Read our earlier guide on [how some buyers successfully appealed their HFE letter while holding overseas property](/blog/hfe-appeal-overseas-property).
 
 ---
 
