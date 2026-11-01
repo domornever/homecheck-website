@@ -4,7 +4,7 @@ export async function handler(event) {
     return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) }
   }
 
-  const { lead, answers, eligibility } = JSON.parse(event.body)
+  const { lead, answers, eligibility, source_page } = JSON.parse(event.body)
 
   // Validate required fields
   if (!lead?.name || !lead?.email) {
@@ -50,7 +50,9 @@ export async function handler(event) {
             'Grants Count':       eligibility?.grants?.length || 0,
             'PDPA Consent':       true,
             'Submitted At':       new Date().toISOString(),
-            'Source':             event.headers['referer'] || 'direct',
+            // source_page is the blog post (or '(direct)' / '(external)') that sent the visitor to the quiz.
+            // The referer header is only ever the quiz page itself, so it is a fallback.
+            'Source':             (source_page && String(source_page).slice(0, 200)) || event.headers['referer'] || 'direct',
           },
         }),
       }
