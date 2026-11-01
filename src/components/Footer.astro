@@ -6,6 +6,7 @@ const { showConsentLink = false } = Astro.props;
 <footer>
 	<p>&copy; {today.getFullYear()} Home Theory. All rights reserved.</p>
 	<p class="disclaimer">General guidance based on HDB rules. Not financial or legal advice.</p>
+	<p class="disclaimer"><a href="/privacy">Privacy</a></p>
 	{showConsentLink && <p class="disclaimer"><button type="button" id="consent-reset">Analytics settings</button></p>}
 </footer>
 
@@ -28,6 +29,10 @@ const { showConsentLink = false } = Astro.props;
 	footer p {
     margin: 0;
 }
+	footer a {
+		color: inherit;
+		text-decoration: underline;
+	}
 	#consent-reset {
 		padding: 0;
 		border: none;
