@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { calculateEligibility } from './eligibility'
+import { track } from '../analytics/track.js'
+import { getSourcePage } from '../analytics/source.js'
 
 // ── All quiz steps (both paths share this list) ──────────────────────────────
 // Couples/family path:  age → citizenship → buyerType → partnerCitizenship → income → propertyOwnership
@@ -131,6 +133,10 @@ const PROP_META = {
   privateProp: { tag: 'Private',    title: 'Private Property', emoji: '🏡', bg: '#F1EFE8', subtitle: 'Condos, landed, new launches. No income ceiling.' },
 }
 
+// ── Analytics labels ─────────────────────────────────────────────────────────
+const EXIT_REASONS = { exitSchool: 'under_21', exitForeigner: 'foreigner', exitSinglePR: 'single_pr' }
+const LEAD_TYPES   = { leadCapture: 'full', exitForeigner: 'foreigner_exit', exitSinglePR: 'single_pr_exit' }
+
 // ── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   const [step, setStep]       = useState('intro')
@@ -141,11 +147,17 @@ export default function App() {
   const [submitting, setSubmitting] = useState(false)
   const [animKey, setAnimKey] = useState(0)
 
-  const goTo = (s) => { setAnimKey(k => k + 1); setStep(s) }
+  const goTo = (s) => {
+    if (EXIT_REASONS[s]) track('quiz_exit', { exit_reason: EXIT_REASONS[s], source_page: getSourcePage() })
+    setAnimKey(k => k + 1)
+    setStep(s)
+  }
 
   const handleAnswer = (stepKey, value) => {
     const updated = { ...answers, [stepKey]: value }
     setAnswers(updated)
+    const position = getEffectiveSteps(updated).indexOf(stepKey) + 1
+    if (position > 0) track('quiz_question_answered', { step: position, step_name: stepKey, source_page: getSourcePage() })
     goTo(getNextStep(stepKey, updated))
   }
 
@@ -163,10 +175,16 @@ const submitLead = async () => {
       const response = await fetch('/api/submit-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ lead, answers, eligibility: res }),
+        body: JSON.stringify({ lead, answers, eligibility: res, source_page: getSourcePage() }),
       })
       const data = await response.json()
-      if (data.recordId) setRecordId(data.recordId)
+      if (data.recordId) {
+        setRecordId(data.recordId)
+        // Only a confirmed save counts: results render even when the save fails.
+        const sourcePage = getSourcePage()
+        if (step === 'leadCapture') track('quiz_complete', { source_page: sourcePage })
+        track('generate_lead', { lead_type: LEAD_TYPES[step], source_page: sourcePage })
+      }
     } catch (err) {
       console.error('Lead submission failed:', err)
     }
@@ -204,7 +222,7 @@ return (
         {showBack && <button className="back-btn" onClick={handleBack}>← Back</button>}
         <div key={animKey} className={`screen-anim${step === 'results' ? ' screen-anim--wide' : ''}`}>
 
-          {step === 'intro' && <IntroScreen onStart={() => goTo('age')} />}
+          {step === 'intro' && <IntroScreen onStart={() => { track('quiz_start', { source_page: getSourcePage() }); goTo('age') }} />}
 
           {step === 'age' && (
             <AgeInputScreen
