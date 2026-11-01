@@ -1,10 +1,13 @@
 ---
 const today = new Date();
+const { showConsentLink = false } = Astro.props;
 ---
 
 <footer>
 	<p>&copy; {today.getFullYear()} Home Theory. All rights reserved.</p>
 	<p class="disclaimer">General guidance based on HDB rules. Not financial or legal advice.</p>
+	<p class="disclaimer"><a href="/privacy">Privacy</a></p>
+	{showConsentLink && <p class="disclaimer"><button type="button" id="consent-reset">Analytics settings</button></p>}
 </footer>
 
 <style>
@@ -26,5 +29,23 @@ const today = new Date();
 	footer p {
     margin: 0;
 }
+	footer a {
+		color: inherit;
+		text-decoration: underline;
+	}
+	#consent-reset {
+		padding: 0;
+		border: none;
+		background: none;
+		color: inherit;
+		font: inherit;
+		text-decoration: underline;
+		cursor: pointer;
+	}
 </style>
+
+<script>
+	import { resetConsent } from '../analytics/consent.js'
+	document.getElementById('consent-reset')?.addEventListener('click', resetConsent)
+</script>
 

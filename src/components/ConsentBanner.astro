@@ -1,0 +1,80 @@
+---
+// Asks for analytics consent. Rendered only when GA is configured (nothing to consent to otherwise).
+---
+
+<div class="consent" id="consent-banner" role="region" aria-label="Analytics consent" hidden>
+	<p>
+		We use Google Analytics to see which guides are useful. It sets cookies on your device.
+		The quiz works the same either way. <a href="/privacy">Privacy</a>
+	</p>
+	<div class="actions">
+		<button type="button" class="decline" id="consent-decline">Decline</button>
+		<button type="button" class="accept" id="consent-accept">Accept</button>
+	</div>
+</div>
+
+<script>
+	import { getConsent, setConsent } from '../analytics/consent.js'
+
+	const banner = document.getElementById('consent-banner')
+	if (banner && getConsent() === null) banner.hidden = false
+
+	const choose = (value: 'granted' | 'denied') => {
+		setConsent(value)
+		if (banner) banner.hidden = true
+	}
+	document.getElementById('consent-accept')?.addEventListener('click', () => choose('granted'))
+	document.getElementById('consent-decline')?.addEventListener('click', () => choose('denied'))
+</script>
+
+<style>
+	.consent {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 12px 24px;
+		padding: 12px 16px;
+		background: #1C1A17;
+		color: #FAF7F2;
+		font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.consent[hidden] {
+		display: none;
+	}
+	.consent p {
+		margin: 0;
+		max-width: 560px;
+	}
+	.consent a {
+		color: inherit;
+		text-decoration: underline;
+	}
+	.actions {
+		display: flex;
+		gap: 8px;
+	}
+	button {
+		cursor: pointer;
+		border-radius: 6px;
+		padding: 8px 16px;
+		font-size: 14px;
+		font-weight: 700;
+		border: 1px solid #C5613A;
+	}
+	.accept {
+		background: #C5613A;
+		color: #fff;
+	}
+	.decline {
+		background: transparent;
+		color: #FAF7F2;
+	}
+</style>
